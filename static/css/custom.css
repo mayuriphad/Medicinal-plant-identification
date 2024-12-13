@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../css/bacground.jpeg.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire screen */
+    color: #fff; /* Change text color to white for better contrast */
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better visibility */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px auto;
+    width: 80%;
+    text-align: center;
+}
+
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 5px;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+input[type="file"] {
+    padding: 10px;
+    margin: 10px 0;
+}

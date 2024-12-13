@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <p><strong>Predicted Class:</strong> {{ predicted_class }}</p>
+
+        <h2>More Information</h2>
+        {% if search_results %}
+            <ul>
+            {% for result in search_results %}
+                <li><a href="{{ result.link }}" target="_blank">{{ result.title }}</a></li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p>No additional information found.</p>
+        {% endif %}
+
+        <div class="buttons">
+            <a href="{{ url_for('home') }}" class="btn">Go Back to Home</a>
+            <a href="{{ url_for('cancel') }}" class="btn">Cancel</a>
+        </div>
+    </div>
+</body>
+</html>
