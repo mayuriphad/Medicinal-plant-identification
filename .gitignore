@@ -3,3 +3,4 @@
 *.pyc
 
 /uploads
+*.h5
