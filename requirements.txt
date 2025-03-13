@@ -1,0 +1,8 @@
+# Core Dependencies
+tensorflow
+keras
+numpy
+pandas
+pillow
+matplotlib
+scikit-learn
